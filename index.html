@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DPG_TestTask</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body background="./images/cosmos.png">
+    <h1>Hello</h1>
+    <div class="form-wrap" >
+        <header>
+            <h4>For business enquiries please use the form below</h4>
+            <h5>*Required</h5>
+        </header>
+        <main>
+        <div class="user_container"> 
+        <form action="#" class="user_container_form" id="form">
+            <label class="user-container__title" for="nick-name">Name*</label>
+            <input 
+            class="user_container__form_input" 
+            type="text"
+            name="name"
+            placeholder=""
+            id="nick-name"
+            autocomplete="off"
+            list="defaultName"
+            >
+            <datalist id="defaultName">
+                <option value="John"></option>
+            </datalist>
+
+            <label class="user-container__title" for="company">Company*</label>
+            <input 
+            class="user_container__form_input" 
+            type="text"
+            name="company"
+            placeholder=""
+            id="company-name"
+            autocomplete="off"
+            >
+
+            <label class="user-container__title" for="email">Email*</label>
+            <input 
+            class="user_container__form_input" 
+            type="email"
+            name="email"
+            placeholder=""
+            id="email"
+            autocomplete="off"
+            >
+
+            <label class="user-container__title" for="phone">Phone</label>
+            <input 
+            class="user_container__form_input" 
+            type="tel"
+            name="phone"
+            placeholder=""
+            id="phone"
+            autocomplete="off"
+            >
+
+            <label class="user-container__title" for="subject">Subject</label>
+            <input 
+            class="user_container__form_input" 
+            type="text"
+            name="subject"
+            placeholder=""
+            id="subject"
+            autocomplete="off"
+            >
+            
+            <label class="user-container__title" for="message">Message</label>
+            <textarea style="overflow:hidden" class="user_container__form_textarea" name="message" id="message" cols="30" rows="10">But I must explain to you how all this mistaken idea of denouncing</textarea>
+      
+
+
+            <div class="user-container__checked-box">
+                <label class="user-container__form_label" for="radio">
+                    <input
+                        class="custom-checkbox"
+                        type="checkbox"
+                        id="radio"
+                        name="radio"
+                        value="yes"
+                    />
+                    <span class="custom__radio"></span>
+                    I accept <a href="#"> Terms and Privacy Policy</a></label
+                >
+            </div>
+            <button class="user-container__form_button" type="submit" id="submit">
+                Send
+            </button>
+            </main>
+        </form>
+    </div>
+       
+    </div>
+    <script type="module" src="./js/index.js"></script>
+</body>
+</html>
